@@ -61,4 +61,8 @@ func main() {
 	radio := 10.0
 	areaCirculo := math.Pi * radio * radio
 	fmt.Println("Area Circulo:", areaCirculo)
+
+	// Calculating Rectangle Area
+	result = (base * altura) / 2
+	fmt.Println("Rectangle:", result)
 }
