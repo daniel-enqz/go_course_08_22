@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"reflect"
 )
 
@@ -55,5 +56,9 @@ func main() {
 
 	// Incremental
 	x++
-	fmt.Println("Incremental:", x)
+
+	// Calculating Cicle area
+	radio := 10.0
+	areaCirculo := math.Pi * radio * radio
+	fmt.Println("Area Circulo:", areaCirculo)
 }
