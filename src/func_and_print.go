@@ -29,7 +29,13 @@ func welcomeMessage(animal string, position int) {
 	fmt.Printf("%s, Data type: %T\n", message, message)
 }
 
+func returnValueMultiplied(number int) (result int) {
+	result = number * 2
+	return
+}
+
 func main() {
 	printFunction()
 	welcomeMessage("cat", 5)
+	fmt.Println(returnValueMultiplied(10))
 }
