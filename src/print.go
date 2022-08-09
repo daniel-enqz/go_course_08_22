@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func printFunction() {
 	// Variable Declaration
 	helloMessage := "Hello,"
 	var worldMessage string = "world"
@@ -22,4 +22,14 @@ func main() {
 	// Print the type
 	const nombre string = "UltiRequiem"
 	fmt.Printf("La variable 'nombre' es de tipo : %T\n", nombre)
+}
+
+func welcomeMessage(animal string, position int) {
+	message := fmt.Sprintf("%s is the top %d animal in the world", animal, position)
+	fmt.Printf("%s, Data type: %T\n", message, message)
+}
+
+func main() {
+	printFunction()
+	welcomeMessage("cat", 5)
 }
