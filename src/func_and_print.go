@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func printFunction() {
 	// Variable Declaration
@@ -34,8 +37,15 @@ func returnValueMultiplied(number int) (result int) {
 	return
 }
 
+func doubleReturnValue(number int) (result int, message string) {
+	result = number * 2
+	message = "The result is: " + strconv.Itoa(result)
+	return
+}
+
 func main() {
 	printFunction()
 	welcomeMessage("cat", 5)
 	fmt.Println(returnValueMultiplied(10))
+	fmt.Println(doubleReturnValue(10))
 }
