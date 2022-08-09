@@ -37,6 +37,23 @@ func main() {
 	areaCuadrado := baseCuadrado * baseCuadrado
 	fmt.Println(areaCuadrado)
 
-	age := 23
-	fmt.Println(reflect.TypeOf(age))
+	// Artmethic Operators
+	x := 10
+	y := 50
+
+	// Sum
+	result := x + y
+	fmt.Println("Suma:", result)
+
+	// Sub
+	result = x - y
+	fmt.Println("Resta:", result)
+
+	// Mult
+	result = x * y
+	fmt.Println("Mult:", result)
+
+	// Incremental
+	x++
+	fmt.Println("Incremental:", x)
 }
