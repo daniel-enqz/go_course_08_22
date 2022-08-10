@@ -25,12 +25,24 @@ func main() {
 	}
 
 	// Covertir texto a número
-	value, err := strconv.Atoi(""sahsgd)
+	value, err := strconv.Atoi("56")
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Value:", value)
+
+	// EJERCICIOS
+	num1 := 2
+
+	if num1%2 == 0 {
+		fmt.Println("Is even")
+	}
+
+	if checkUserRegistration("user1", "123456") {
+		fmt.Println("Valid User")
+	}
 }
 
-
-// EJERCICIO
+func checkUserRegistration(user, password string) bool {
+	return user == "user1" && password == "123456"
+}
