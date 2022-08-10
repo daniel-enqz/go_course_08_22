@@ -1,12 +1,14 @@
 package main
 
+import "fmt"
+
 func main() {
 	valor1 := 1
-	// valor2 := 2
+	valor2 := 2
 
-	if valor1 == 1 {
-		println("valor1 is 1")
+	if valor1 == 1 && valor2 == 2 {
+		fmt.Println("valor1 is 1 and valor2 is 2")
 	} else {
-		println("valor1 is not 1")
+		fmt.Println("valor1 is not 1 and valor2 is not 2")
 	}
 }
