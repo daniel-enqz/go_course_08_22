@@ -18,3 +18,6 @@
   fmt.Println("Value:", value)
 }
 ```
+
+### To modify the GOOROOT problem
+`go mod init`
