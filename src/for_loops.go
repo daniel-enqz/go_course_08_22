@@ -17,10 +17,22 @@ func main() {
 		counter++
 	}
 
+	fmt.Println("\n")
+
 	// For forever
 	counterForever := 0
 	for {
 		fmt.Println(counterForever)
 		counterForever++
+		if counterForever == 10 {
+			break
+		}
+	}
+
+	fmt.Println("\n")
+
+	// EJERCICIO
+	for i := 10; i < 10; i-- {
+		fmt.Println(i)
 	}
 }
