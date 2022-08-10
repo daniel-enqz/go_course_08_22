@@ -10,4 +10,6 @@ func main() {
 	myCar.Brand = "BMW"
 	myCar.Year = 2018
 	fmt.Println(myCar)
+
+	pk.PrintMessage("Hola Mundo")
 }
