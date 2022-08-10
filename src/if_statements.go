@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"strconv"
+)
 
 func main() {
 	valor1 := 1
@@ -19,4 +23,14 @@ func main() {
 	} else {
 		fmt.Println("is_type is not a string")
 	}
+
+	// Covertir texto a número
+	value, err := strconv.Atoi(""sahsgd)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Value:", value)
 }
+
+
+// EJERCICIO
