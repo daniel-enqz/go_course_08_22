@@ -11,10 +11,10 @@
 
 ```go
   // Covertir texto a número
-	value, err := strconv.Atoi(""sahsgd)
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println("Value:", value)
+  value, err := strconv.Atoi(""sahsgd)
+  if err != nil {
+    log.Fatal(err)
+  }
+  fmt.Println("Value:", value)
 }
 ```
