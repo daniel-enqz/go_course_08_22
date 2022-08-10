@@ -40,6 +40,8 @@ func main() {
 
 	if checkUserRegistration("user1", "123456") {
 		fmt.Println("Valid User")
+	} else {
+		fmt.Println("Incorrect Registration")
 	}
 }
 
