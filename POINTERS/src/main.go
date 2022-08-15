@@ -15,6 +15,10 @@ func (myPc *pc) duplicateRAM() {
 	myPc.ram = myPc.ram * 2
 }
 
+func (myPC *pc) String() string {
+	return fmt.Sprintf("RAM: %d\nCPU: %d", myPC.ram, myPC.cpu)
+}
+
 func main() {
 	a := 50
 	b := &a
@@ -38,4 +42,6 @@ func main() {
 
 	myPc.duplicateRAM()
 	fmt.Println(myPc) // {64, 200}
+
+	fmt.Println(myPc.String())
 }
