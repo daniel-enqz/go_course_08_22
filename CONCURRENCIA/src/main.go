@@ -21,4 +21,8 @@ func main() {
 	wg.Wait()
 	// time.Sleep(time.Second * 1)
 
+	go func(text string) {
+		fmt.Println(text)
+	}("Adiós")
+
 }
