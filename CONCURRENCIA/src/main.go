@@ -10,6 +10,6 @@ func say(text string) {
 
 func main() {
 	say("Hello")
-	say("world")
+	go say("world")
 
 }
